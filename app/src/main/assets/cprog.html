@@ -1,0 +1,120 @@
+<html>
+<body>
+	<h3>C Programming Language</h3>
+<p>&nbsp;</p>
+<p>C is a procedural programming language. It was initially developed by Dennis Ritchie as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like operating system or compiler development.</p>
+<h4>C Language Introduction</h4>
+<p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development.</p>
+<p>Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).</p>
+<h4>Structure of a C program</h4>
+<p>int main() { print("Hello World"); }</p>
+<p>Header Files Inclusion:</p>
+<p>stddef.h &ndash; Defines several useful types and macros.</p>
+<p>stdint.h &ndash; Defines exact width integer types.,/p&gt;</p>
+<p>stdio.h &ndash; Defines core input and output functions</p>
+<p>stdlib.h &ndash; Defines numeric conversion functions, pseudo-random network generator, memory allocation</p>
+<p>string.h &ndash; Defines string handling functions</p>
+<p>math.h &ndash; Defines common mathematical functions</p>
+<p>&nbsp;</p>
+<h5>Syntax to include a header file in C:</h5>
+<p>#include</p>
+<h5>Main Method Declaration:</h5>
+<p>The next part of a C program is to declare the main() function. The syntax to declare the main function is:</p>
+<p>Syntax to Declare main method: int main() {}</p>
+<p>Variable Declaration:</p>
+<p>The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in the C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.</p>
+<p>Example: int main() { int a; . .}</p>
+<h4>Compiling a C program:- Behind the Scenes</h4>
+<p>C is a high-level language and it needs a compiler to convert it into an executable code so that the program can be run on our machine.</p>
+<p>$ vi filename.c</p>
+<p>$ gcc &ndash;Wall filename.c &ndash;o filename</p>
+<p>$ ./filename</p>
+<h4>Benefits of C language over other programming languages</h4>
+<p>1. As a middle-level language, C combines the features of both high-level and low-level languages. It can be used for low-level programming, such as scripting for drivers and kernels and it also supports functions of high-level programming languages, such as scripting for software applications etc.</p>
+<p>2. C is a structured programming language which allows a complex program to be broken into simpler programs called functions. It also allows free movement of data across these functions.</p>
+<p>3. Various features of C including direct access to machine level hardware APIs, the presence of C compilers, deterministic resource use and dynamic memory allocation make C language an optimum choice for scripting applications and drivers of embedded systems.</p>
+<p>4. C language is case-sensitive which means lowercase and uppercase letters are treated differently.</p>
+<p>5. C is highly portable and is used for scripting system applications which form a major part of Windows, UNIX, and Linux operating system.</p>
+<p>6. C is a general-purpose programming language and can efficiently work on enterprise applications, games, graphics, and applications requiring calculations, etc.</p>
+<p>7. C language has a rich library which provides a number of built-in functions. It also offers dynamic memory allocation.</p>
+<p>8. C implements algorithms and data structures swiftly, facilitating faster computations in programs. This has enabled the use of C in applications requiring higher degrees of calculations like MATLAB and Mathematica.</p>
+<h4>Variables in C :</h4>
+<p>A variable in simple terms is a storage place which has some memory allocated to it. Basically, a variable used to store some form of data. Different types of variables require different amounts of memory, and have some specific set of operations which can be applied on them.</p>
+<h5>Variable Declaration:</h5>
+<p>type variable_name;<br /> or for multiple variables:<br /> type variable1_name, variable2_name, variable3_name;</p>
+<p>#include int main() <br /> { <br /> // declaration and definition of variable 'a123' <br /> char a123 = 'a'; <br /> // This is also both declaration and definition as 'b' is allocated <br /> // memory and assigned some garbage value. <br /> float b; <br /> // multiple declarations and definitions <br /> int _c, _d45, e; <br /> // Let us print a variable <br /> printf("%c \n", a123); <br /> return 0; <br /> }</p>
+<h5>Types of Variables in C:</h5>
+<p>1. Local Variable: <br /> A variable that is declared and used inside the function or block is called local variable.<br /> It&rsquo;s scope is limited to function or block.It cannot be used outside the block.Local variables need to be initialized before us.</p>
+<h5>2. Global Variable:</h5>
+<p>A variable that is declared outside the function or block is called a global variable. It is declared at the starting of program. It is available to all the functions.</p>
+<h5>3.Static Variable:</h5>
+<p>A variable that retains its value between multiple function calls is known as static variable. It is declared with the static keyword.</p>
+<h4>Data Types in C:</h4>
+<p>1. char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.<br /> 2. int: As the name suggests, an int variable is used to store an integer. float: It is used to store decimal numbers (numbers with floating point value) with single precision.<br /> 3. double: It is used to store decimal numbers (numbers with floating point value) with double precision.</p>
+<h5>Static Variables in C:</h5>
+<p>Static variables have a property of preserving their value even after they are out of their scope!Hence, static variables preserve their previous value in their previous scope and are not initialized again in the new scope.<br /><br /> Syntax:<br /> static data_type var_name = var_value;</p>
+<h4>Operators in C:</h4>
+<p>Operators are the foundation of any programming language. Thus the functionality of C language is incomplete without the use of operators. Operators allow us to perform different kinds of operations on operands. In C, operators in Can be categorized in following categories:<br /><br /> 1. Arithmetic Operators (+, -, *, /, %, post-increment, pre-increment, post-decrement, pre-decrement)<br /> 2. Relational Operators (==, !=, &gt;, &lt;, &gt;= &amp; &lt;=) Logical Operators (&amp;&amp;, || and !)<br /> 3. Bitwise Operators (&amp;, |, ^, ~, &gt;&gt; and &lt;&lt;)<br /> 4. Assignment Operators (=, +=, -=, *=, etc)<br /> 5. Other Operators (conditional, comma, sizeof, address, redirection)<br /><br /></p>
+<h4>What is Array :</h4>
+<p>An array in C or C++ is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to store similar type of elements as in the data type must be the same for all elements. They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type. To add to it, an array in C or C++ can store derived data types such as the structures, pointers etc.<br /><br /></p>
+<h5>Why do we need arrays?</h5>
+<p>We can use normal variables (v1, v2, v3, ..) when we have a small number of objects, but if we want to store a large number of instances, it becomes difficult to manage them with normal variables. The idea of an array is to represent many instances in one variable.<br /><br /></p>
+<h5>Arrays in C Language:</h5>
+<p>1) In C, it is possible to have array of all types except void and functions. See this for details.<br /> 2) In C, array and pointer are different. They seem similar because array name gives address of first element and array elements are accessed using pointer arithmetic.<br /> 3) Arrays are always passed as pointer to functions.<br /> 4) A character array initialized with double quoted string has last element as &lsquo;\0&rsquo;.<br /> 5) Like other variables, arrays can be allocated memory in any of the three segments, data, heap, and stack.</p>
+<h4>Strings in C:</h4>
+<p>Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a special character &lsquo;\0&rsquo;.<br /><br /> *Declaration of strings: Declaring a string is as simple as declaring a one dimensional array. Below is the basic syntax for declaring a string.<br /> char str_name[size];<br /><br /> *Initializing a String: A string can be initialized in different ways. We will explain this with the help of an example. Below is an example to declare a string with name as str and initialize it with &ldquo;GeeksforGeeks&rdquo;.<br /> 1. char str[] = "GeeksforGeeks";<br /> 2. char str[50] = "GeeksforGeeks";<br /> 3. char str[] = {'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};<br /> 4. char str[14] = {'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};<br /><br /></p>
+<h4>Functions in C:</h4>
+<p>A function is a set of statements that take inputs, do some specific computation and produces output.<br /> The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can call the function.<br /> The general form of a function is:<br /><br /> return_type function_name([ arg1_type arg1_name, ... ]) { code } <br /><br /></p>
+<h5>Example:</h5>
+<p>#include <br /><br /> // An example function that takes two parameters 'x' and 'y' <br /> // as input and returns max of two input numbers <br /> int max(int x, int y) <br /> { <br /> if (x &gt; y) &lt;br&lt; return x; <br /> else<br /> return y;<br /> } <br /> <br /> // main function that doesn't receive any parameter and // returns integer.<br /> int main(void) <br /> { <br /> int a = 10, b = 20; <br /> // Calling above function to find max of 'a' and 'b' <br /> int m = max(a, b); <br /> printf("m is %d", m); <br /> return 0; <br /> } <br /><br /></p>
+<h4>Function Declaration:</h4>
+<p>A function declaration tells the compiler about the number of parameters function takes, data-types of parameters and return type of function. Putting parameter names in function declaration is optional in the function declaration, but it is necessary to put them in the definition. Below are an example of function declarations.<br /> function_type function_name(parameters)<br /> {<br /> //set of operations<br /> }</p>
+<p>&nbsp;</p>
+<h4>Parameter Passing to functions:</h4>
+<p>The parameters passed to function are called actual parameters. For example, in the above program 10 and 20 are actual parameters<br />. The parameters received by function are called formal parameters. For example, in the above program x and y are formal parameters.<br /><br /> there are two types:<br /> 1. Pass by Value: In this parameter passing method, values of actual parameters are copied to function&rsquo;s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of caller.<br /> 2. Pass by Reference Both actual and formal parameters refer to same locations, so any changes made inside the function are actually reflected in actual parameters of caller.<br /> Parameters are always passed by value in C. For example. in the below code, value of x is not modified using the function fun().</p>
+<h4>Functions in C:</h4>
+<p>C function is a self-contained block of statements that can be executed repeatedly whenever we need it.<br /><br /></p>
+<h4>Benefits of using the functions in C:</h4>
+<p>The function provides modularity.<br /> The function provides reusable code.<br /> In large programs, debugging and editing tasks is easy with the use of functions.<br /> The program can be modularized into smaller parts.<br /> Separate function independently can be developed according to the needs.<br /><br /></p>
+<h5>Types of Functions in C:</h5>
+<p>The system provided these functions and stored in the library. Therefore it is also called Library Functions.<br /> e.g. scanf(), printf(), strcpy, strlwr, strcmp, strlen, strcat etc.<br /> To use these functions, you just need to include the appropriate C header files.<br /> User Defined Functions These functions are defined by the user at the time of writing the program.<br /><br /></p>
+<h5>Parts of Functions:</h5>
+<p>1. Function Prototype (function declaration)<br /> 2. Function Definition<br /> 3. Function Call<br /><br /></p>
+<h5>Function Definition:</h5>
+<p>returnType functionName(Function arguments)<br /> {<br /> //body of the function <br /> }<br /><br /></p>
+<h4>Calling Function in C:</h4>
+<p>#include<br /> /* function declaration */int addition();<br /> int main()<br /> {<br /> /* local variable definition */ int answer;<br /> /* calling a function to get addition value */ answer = addition();<br /> printf("The addition of the two numbers is: %d\n",answer);<br /> return 0;<br /> }<br /> /* function returning the addition of two numbers */int addition()<br /> {<br /> /* local variable definition */ int num1 = 10, num2 = 5;<br /> return num1+num2;<br /> }<br /><br /></p>
+<h4>Library Functions in C:</h4>
+<p>The C library functions are provided by the system and stored in the library. The C library function is also called an inbuilt function in C programming.<br /> To use Inbuilt Function in C, you must include their respective header files, which contain prototypes and data definitions of the function.<br /><br /></p>
+<h5>C Program to demontrate Library functions:</h5>
+<p>#include &lt; stdio.h &gt; <br /> #include &lt; ctype.h &gt;<br /> #include &lt; math.h &gt;<br /> void main()<br /> {<br /> int i = -10, e = 2, d = 10; /* Variables Defining and Assign values */ float rad = 1.43;<br /> double d1 = 3.0, d2 = 4.0;<br /> printf("%d\n", abs(i));<br /> printf("%f\n", sin(rad));<br /> printf("%f\n", cos(rad));<br /> printf("%f\n", exp(e));<br /> printf("%d\n", log(d));<br /> printf("%f\n", pow(d1, d2));<br /> }<br /><br /></p>
+<h4>Recursion in C:</h4>
+<p>Recursion can be defined as the technique of replicating or doing again an activity in a self-similar way calling itself again and again, and the process continues till specific condition reaches. In the world of programming, when your program lets you call that specific function from inside that function, then this concept of calling the function from itself can be termed as recursion, and the function in which makes this possible is called recursive function.</p>
+<h5>Example:</h5>
+<p>void rec_prog(void) <br /> {<br /> rec_prog(); /* function calls itself */}<br /> int main(void) <br /> {<br /> rec_prog();<br /> return 0;<br /> }<br /><br /></p> 
+<h4>Pointers in C:</h4>
+<p>A pointer is a variable in C, and pointers value is the address of a memory location.</p>
+<h5>Pointer definition in C:</h5>
+<p>type *variable_name;<br /><br /> Example: int *width; char *letter;</p>
+<h5>Benefits of pointers in C:</h5>
+<p>Pointers allow passing of arrays and strings to functions more efficiently.<br /> Pointers make it possible to return more than one value from the function.<br /> Pointers reduce the length and complexity of a program.<br /> Pointers increase the processing speed.<br /> Pointers save the memory.<br /><br /></p>
+<h5>How to use Pointers:</h5>
+<p>#include<br /> int main ()<br /> {<br /> int n = 20, *pntr; /* actual and pointer variable declaration */<br /><br /> pntr = &amp;n; /* store address of n in pointer variable*/<br /> printf("Address of n variable: %x\n", &amp;n );<br /> <br /> /* address stored in pointer variable */ printf("Address stored in pntr varia<br />ble: %x\n", pntr );<br /> /* access the value using the pointer */ printf("Value of *pntr variable: %d\n", *pntr );<br /> return 0;<br /> }<br /><br /></p>
+<h4>Memory Allocation in C:</h4>
+<p>C language provides many functions that come in header files to deal with the allocation and management of memories. In this tutorial, you will find brief information about managing memory in your program using some functions and their respective header files.</p>
+<h5>Types of Memory Allocation in C:</h5>
+<p>1. Static Memory Allocation: <br /> In the static memory allocation technique, allocation of memory is done at compilation time, and it stays the same throughout the entire run of your program. Neither any changes will be there in the amount of memory nor any change in the location of memory.<br /><br /> 2. Dynamic Memory Allocation:<br /> In dynamic memory allocation technique, allocation of memory is done at the time of running the program, and it also has the facility to increase/decrease the memory quantity allocated and can also release or free the memory as and when not required or used. Reallocation of memory can also be done when required. So, it is more advantageous, and memory can be managed efficiently.<br /><br /></p>
+<h4>Structure in C:</h4>
+<p>The structure is a user-defined data type in C, which is used to store a collection of different kinds of data.<br /> The structure is something similar to an array; the only difference is array is used to store the same data types.<br /> Variables inside the structure are called members of the structure.</p>
+<h5>Defining Structures:</h5>
+<p>struct Courses<br /> {<br /> char WebSite[50];<br /> char Subject[50];<br /> int Price;<br /> };<br /><br /></p>
+<h4>Union in C:</h4>
+<p>Unions are user-defined data type in C, which is used to store a collection of different kinds of data, just like a structure. However, with unions, you can only store information in one field at any one time.<br /> Unions are like structures except it used less memory.<br /> The keyword union is used to declare the structure in C.<br /> Variables inside the union are called members of the union.</p>
+<h5>Defining Union:</h5>
+<p>union Courses<br /> {<br /> char WebSite[50];<br /> char Subject[50];<br /> int Price;<br /> };<br /><br /></p>
+<h4>File Handling in C:</h4>
+<p>C files I/O functions handle data on a secondary storage device, such as a hard disk.<br /> C can handle files as Stream-oriented data (Text) files, and System oriented data (Binary) files.<br /> 1. Stream-oriented data files: The data is stored in the same manner as it appears on the screen. The I/O operations like buffering, data conversions, etc. take place automatically.<br /> 2. System-oriented data files:System-oriented data files are more closely associated with the OS and data stored in memory without converting into text format.<br /><br /> 1. fopen(): Opens a file.<br /> 2. fclose(): Closes a file.<br /> 3. getc(): Reads a character from a file.<br /> 4. putc(): Writes a character to a file.<br /> 5. fprintf(): Prints formatted output to a file.<br /> 6. fscanf(): Reads formatted input from a file<br /> 7. gets(): Read string of characters from a file. <br /> 8. puts(): Write string of characters to file. <br /><br /></p>
+<h4>Error Handling in C:</h4>
+<p>Error handling features are not supported by C programming, which is known as exception handling in C++ or in other OOP (Object Oriented Programming) languages. However, there are few methods and variables available in C's header file error.h that is used to locate errors using return values of the function call. In C, the function return NULL or -1 value in case of any error, and there is a global variable errno which sets the error code/number. Hence, the return value can be used to check error while programming.<br /><br /> C language provides the following functions to represent errors. These are:<br /> 1. perror(): This function returns a string to pass to it along with the textual representation of current errno value.<br /> 2. error(): This function is defined in string.h library and this method return a pointer to the string representation of the present errno value.<br /><br /> Example:<br /><br /> /* Divided By zero Error i.e. Exception*/#include #include &lt; stdio.h &gt;<br /> void main()<br /> {<br /> int ddend = 60;<br /> int dsor = 0;<br /> int q;<br /> if( dsor == 0)<br /> {<br /> fprintf(stderr, "Division by zero! Exiting...\n");<br /> getch();<br /> exit(-1);<br /> }<br /> q = ddend / dsor;<br /> fprintf(stderr, "Value of quotient : %d\n", q);<br /> getch();<br /> exit(0);<br /> }<br /><br /></p>
+</body>
+</html>

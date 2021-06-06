@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learnbuddy">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".java" />
+        <activity android:name=".cprogram"/>
+        <activity android:name=".cplus"/>
+        <activity android:name=".data_structure"/>
+        <activity android:name=".questions"/>
+        <activity android:name=".about"/>
+        <activity android:name=".Facebook"/>
+        <activity android:name=".C_program"/>
+        <activity android:name=".Cplus_program"/>
+        <activity android:name=".Java_program"/>
+        <activity android:name=".Html_Program"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Editor"/>
+
+        <activity android:name=".loginpage"/>
+
+        <activity android:name=".loginactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity android:name=".splashscreen"
+           android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+           <intent-filter>
+           <action android:name="android.intent.action.MAIN" />
+
+           <category android:name="android.intent.category.LAUNCHER" />
+       </intent-filter></activity>
+
+    </application>
+
+</manifest>

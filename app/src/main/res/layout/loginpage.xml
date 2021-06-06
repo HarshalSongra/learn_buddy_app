@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Whitesmoke">
+
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="55dp"
+        android:hint="User Name"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="54dp"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="243dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/password1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="235dp"
+        android:background="@color/colorAccent"
+        android:text="Sign in" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="142dp"
+        android:layout_height="127dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="520dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>

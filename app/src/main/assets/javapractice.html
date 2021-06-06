@@ -1,0 +1,689 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Times,serif;font-size:21.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:21.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:19.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:19.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Times,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Times,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Times,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Times,serif;font-size:17.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Times,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Times,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Times,serif;font-size:13.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:234.72px;top:6.60px" class="cls_002"><span class="cls_002">Java Variables</span></div>
+<div style="position:absolute;left:129.36px;top:75.96px" class="cls_003"><span class="cls_003">class Variables</span></div>
+<div style="position:absolute;left:285.12px;top:75.00px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:138.72px;top:114.36px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:149.04px;top:133.56px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:206.64px;top:133.56px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:226.56px;top:133.56px" class="cls_003"><span class="cls_003">5:</span></div>
+<div style="position:absolute;left:415.20px;top:155.56px" class="cls_004"><span class="cls_004">/</span></div>
+<div style="position:absolute;left:148.56px;top:152.76px" class="cls_003"><span class="cls_003">System.out.println("I want </span><span class="cls_004"> I</span></div>
+<div style="position:absolute;left:430.32px;top:162.76px" class="cls_004"><span class="cls_004">+</span></div>
+<div style="position:absolute;left:449.52px;top:152.76px" class="cls_003"><span class="cls_003">x</span></div>
+<div style="position:absolute;left:469.20px;top:152.76px" class="cls_003"><span class="cls_003">+  '</span></div>
+<div style="position:absolute;left:139.20px;top:171.24px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:129.36px;top:212.00px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:128.16px;top:304.04px" class="cls_006"><span class="cls_006">Output</span></div>
+<div style="position:absolute;left:211.92px;top:304.04px" class="cls_006"><span class="cls_006">:</span></div>
+<div style="position:absolute;left:129.36px;top:363.00px" class="cls_003"><span class="cls_003">I want</span></div>
+<div style="position:absolute;left:197.28px;top:363.00px" class="cls_003"><span class="cls_003">5  icecreams.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:211.68px;top:17.92px" class="cls_007"><span class="cls_007">Java Scanner Class</span></div>
+<div style="position:absolute;left:131.28px;top:85.32px" class="cls_003"><span class="cls_003">import  java.util.Scanner;</span></div>
+<div style="position:absolute;left:131.28px;top:123.24px" class="cls_003"><span class="cls_003">class  ScannerClass</span></div>
+<div style="position:absolute;left:313.68px;top:122.52px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.40px;top:161.16px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.24px;top:199.08px" class="cls_003"><span class="cls_003">Scanner  input</span></div>
+<div style="position:absolute;left:284.40px;top:199.08px" class="cls_003"><span class="cls_003">=  new Scanner(System.i</span></div>
+<div style="position:absolute;left:150.24px;top:218.04px" class="cls_003"><span class="cls_003">System.out.println("Enter your  name'</span></div>
+<div style="position:absolute;left:150.24px;top:237.00px" class="cls_003"><span class="cls_003">String name</span></div>
+<div style="position:absolute;left:265.44px;top:237.00px" class="cls_003"><span class="cls_003">=  input.nextLine();</span></div>
+<div style="position:absolute;left:150.24px;top:274.92px" class="cls_003"><span class="cls_003">System.out.println("Enter your  age"</span></div>
+<div style="position:absolute;left:150.72px;top:293.88px" class="cls_003"><span class="cls_003">int  age</span></div>
+<div style="position:absolute;left:227.04px;top:293.88px" class="cls_003"><span class="cls_003">=  input.nextInt();</span></div>
+<div style="position:absolute;left:150.24px;top:331.80px" class="cls_003"><span class="cls_003">System.out.println("Hello  "</span></div>
+<div style="position:absolute;left:418.80px;top:331.80px" class="cls_003"><span class="cls_003">+  name);</span></div>
+<div style="position:absolute;left:150.24px;top:350.76px" class="cls_003"><span class="cls_003">System.out.println("Your  age is  "</span></div>
+<div style="position:absolute;left:476.16px;top:350.76px" class="cls_003"><span class="cls_003">+</span></div>
+<div style="position:absolute;left:130.80px;top:500.16px" class="cls_008"><span class="cls_008">n. </span><span class="cls_004">1</span></div>
+<div style="position:absolute;left:153.36px;top:507.16px" class="cls_004"><span class="cls_004">+</span></div>
+<div style="position:absolute;left:165.12px;top:507.16px" class="cls_004"><span class="cls_004">1,11  I</span></div>
+<div style="position:absolute;left:187.20px;top:507.16px" class="cls_004"><span class="cls_004">+</span></div>
+<div style="position:absolute;left:212.64px;top:507.16px" class="cls_009"><span class="cls_009">•</span></div>
+<div style="position:absolute;left:130.80px;top:513.88px" class="cls_004"><span class="cls_004">V</span></div>
+<div style="position:absolute;left:142.56px;top:513.88px" class="cls_004"><span class="cls_004">U</span></div>
+<div style="position:absolute;left:156.00px;top:513.88px" class="cls_004"><span class="cls_004">LIJ</span></div>
+<div style="position:absolute;left:176.40px;top:513.88px" class="cls_004"><span class="cls_004">U</span></div>
+<div style="position:absolute;left:189.60px;top:510.88px" class="cls_010"><span class="cls_010">L</span></div>
+<div style="position:absolute;left:212.64px;top:510.88px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:131.28px;top:558.36px" class="cls_003"><span class="cls_003">Enter your name</span></div>
+<div style="position:absolute;left:130.32px;top:577.32px" class="cls_003"><span class="cls_003">Abc</span></div>
+<div style="position:absolute;left:131.28px;top:596.28px" class="cls_003"><span class="cls_003">Enter your age</span></div>
+<div style="position:absolute;left:131.28px;top:615.24px" class="cls_003"><span class="cls_003">22</span></div>
+<div style="position:absolute;left:130.80px;top:634.20px" class="cls_003"><span class="cls_003">Hello Abc</span></div>
+<div style="position:absolute;left:130.32px;top:653.16px" class="cls_003"><span class="cls_003">Your  age  is</span></div>
+<div style="position:absolute;left:246.00px;top:653.16px" class="cls_003"><span class="cls_003">22</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:205.44px;top:14.36px" class="cls_006"><span class="cls_006">Java Math Operators</span></div>
+<div style="position:absolute;left:130.80px;top:81.24px" class="cls_003"><span class="cls_003">class  MathOperatorsExample</span></div>
+<div style="position:absolute;left:390.96px;top:81.24px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.16px;top:100.44px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:149.76px;top:119.40px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.60px;top:119.40px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.76px;top:119.40px" class="cls_003"><span class="cls_003">15;</span></div>
+<div style="position:absolute;left:149.76px;top:138.36px" class="cls_003"><span class="cls_003">int  y</span></div>
+<div style="position:absolute;left:207.60px;top:138.36px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.04px;top:138.36px" class="cls_003"><span class="cls_003">6;</span></div>
+<div style="position:absolute;left:149.76px;top:157.56px" class="cls_003"><span class="cls_003">int  rem</span></div>
+<div style="position:absolute;left:227.04px;top:157.56px" class="cls_003"><span class="cls_003">= x</span></div>
+<div style="position:absolute;left:264.24px;top:157.56px" class="cls_003"><span class="cls_003">% y;</span></div>
+<div style="position:absolute;left:149.76px;top:176.52px" class="cls_003"><span class="cls_003">float  div</span></div>
+<div style="position:absolute;left:246.24px;top:176.52px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:266.88px;top:176.52px" class="cls_003"><span class="cls_003">(float)  x</span></div>
+<div style="position:absolute;left:362.64px;top:176.52px" class="cls_003"><span class="cls_003">/  y;</span></div>
+<div style="position:absolute;left:149.76px;top:195.72px" class="cls_003"><span class="cls_003">System.out.println("Remainder  is</span></div>
+<div style="position:absolute;left:470.40px;top:195.72px" class="cls_003"><span class="cls_003">:"</span></div>
+<div style="position:absolute;left:149.76px;top:214.68px" class="cls_003"><span class="cls_003">System.out.println("Division  result</span></div>
+<div style="position:absolute;left:130.32px;top:365.48px" class="cls_006"><span class="cls_006">Output</span></div>
+<div style="position:absolute;left:212.64px;top:365.48px" class="cls_006"><span class="cls_006">:</span></div>
+<div style="position:absolute;left:130.80px;top:423.96px" class="cls_003"><span class="cls_003">Remainder  is</span></div>
+<div style="position:absolute;left:258.48px;top:423.96px" class="cls_003"><span class="cls_003">:3</span></div>
+<div style="position:absolute;left:130.32px;top:443.16px" class="cls_003"><span class="cls_003">Division  result  is</span></div>
+<div style="position:absolute;left:314.64px;top:443.16px" class="cls_003"><span class="cls_003">(in  float)</span></div>
+<div style="position:absolute;left:422.40px;top:443.16px" class="cls_003"><span class="cls_003">:</span></div>
+<div style="position:absolute;left:438.96px;top:443.16px" class="cls_003"><span class="cls_003">2.5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:186.00px;top:10.96px" class="cls_007"><span class="cls_007">Java Increment Operator</span></div>
+<div style="position:absolute;left:130.32px;top:79.08px" class="cls_003"><span class="cls_003">class  IncrementOperatorExample</span></div>
+<div style="position:absolute;left:430.56px;top:79.08px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:139.44px;top:117.48px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:149.28px;top:136.44px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.36px;top:136.44px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:226.80px;top:136.44px" class="cls_003"><span class="cls_003">5;</span></div>
+<div style="position:absolute;left:148.80px;top:155.64px" class="cls_003"><span class="cls_003">x++;</span></div>
+<div style="position:absolute;left:149.28px;top:174.84px" class="cls_003"><span class="cls_003">System.out.println("After  increment</span></div>
+<div style="position:absolute;left:140.16px;top:196.44px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.32px;top:234.84px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:129.60px;top:326.88px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.40px;top:326.88px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:129.12px;top:384.84px" class="cls_003"><span class="cls_003">After  increment</span></div>
+<div style="position:absolute;left:287.28px;top:384.84px" class="cls_003"><span class="cls_003">:</span></div>
+<div style="position:absolute;left:303.84px;top:384.84px" class="cls_003"><span class="cls_003">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:202.08px;top:13.56px" class="cls_002"><span class="cls_002">Java If Else Condition</span></div>
+<div style="position:absolute;left:131.04px;top:82.20px" class="cls_003"><span class="cls_003">class  IfElseExample</span></div>
+<div style="position:absolute;left:323.52px;top:82.20px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.16px;top:120.36px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.00px;top:139.32px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.60px;top:139.32px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.28px;top:139.32px" class="cls_003"><span class="cls_003">5;</span></div>
+<div style="position:absolute;left:150.00px;top:158.52px" class="cls_003"><span class="cls_003">if</span></div>
+<div style="position:absolute;left:180.00px;top:158.52px" class="cls_003"><span class="cls_003">(x</span></div>
+<div style="position:absolute;left:207.60px;top:158.52px" class="cls_003"><span class="cls_003">==</span></div>
+<div style="position:absolute;left:236.40px;top:158.52px" class="cls_003"><span class="cls_003">5)</span></div>
+<div style="position:absolute;left:159.36px;top:177.48px" class="cls_003"><span class="cls_003">System.out.println("x  is</span></div>
+<div style="position:absolute;left:400.08px;top:177.48px" class="cls_003"><span class="cls_003">5");</span></div>
+<div style="position:absolute;left:149.52px;top:196.44px" class="cls_003"><span class="cls_003">else</span></div>
+<div style="position:absolute;left:159.36px;top:215.64px" class="cls_003"><span class="cls_003">System.out.println("x  is  not</span></div>
+<div style="position:absolute;left:438.72px;top:215.64px" class="cls_003"><span class="cls_003">5");</span></div>
+<div style="position:absolute;left:140.88px;top:237.24px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:131.04px;top:275.40px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:130.08px;top:366.96px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.40px;top:366.96px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:130.08px;top:424.68px" class="cls_003"><span class="cls_003">x is</span></div>
+<div style="position:absolute;left:178.80px;top:424.68px" class="cls_003"><span class="cls_003">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:196.08px;top:23.20px" class="cls_007"><span class="cls_007">Java Logical Operators</span></div>
+<div style="position:absolute;left:132.48px;top:90.36px" class="cls_003"><span class="cls_003">class  LogicalOperatorsExample</span></div>
+<div style="position:absolute;left:418.32px;top:90.36px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:142.08px;top:109.08px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:151.68px;top:128.04px" class="cls_003"><span class="cls_003">int x</span></div>
+<div style="position:absolute;left:208.80px;top:128.04px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.52px;top:128.04px" class="cls_003"><span class="cls_003">5;</span></div>
+<div style="position:absolute;left:151.68px;top:146.76px" class="cls_003"><span class="cls_003">int y</span></div>
+<div style="position:absolute;left:208.80px;top:146.76px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:228.00px;top:146.76px" class="cls_003"><span class="cls_003">10;</span></div>
+<div style="position:absolute;left:151.68px;top:165.48px" class="cls_003"><span class="cls_003">if</span></div>
+<div style="position:absolute;left:181.20px;top:165.48px" class="cls_003"><span class="cls_003">((x</span></div>
+<div style="position:absolute;left:217.92px;top:165.48px" class="cls_003"><span class="cls_003">>=</span></div>
+<div style="position:absolute;left:246.00px;top:165.48px" class="cls_003"><span class="cls_003">4)  &&</span></div>
+<div style="position:absolute;left:305.04px;top:165.48px" class="cls_003"><span class="cls_003">(y</span></div>
+<div style="position:absolute;left:332.40px;top:165.48px" class="cls_003"><span class="cls_003">&lt;=</span></div>
+<div style="position:absolute;left:361.44px;top:165.48px" class="cls_003"><span class="cls_003">15))</span></div>
+<div style="position:absolute;left:161.04px;top:184.44px" class="cls_003"><span class="cls_003">System.out.println("Case</span></div>
+<div style="position:absolute;left:399.60px;top:184.44px" class="cls_003"><span class="cls_003">1");</span></div>
+<div style="position:absolute;left:151.68px;top:206.76px" class="cls_003"><span class="cls_003">if</span></div>
+<div style="position:absolute;left:181.20px;top:206.76px" class="cls_003"><span class="cls_003">((x</span></div>
+<div style="position:absolute;left:217.92px;top:206.76px" class="cls_003"><span class="cls_003">>=</span></div>
+<div style="position:absolute;left:246.00px;top:206.76px" class="cls_003"><span class="cls_003">4)  II</span></div>
+<div style="position:absolute;left:305.04px;top:206.76px" class="cls_003"><span class="cls_003">(Y</span></div>
+<div style="position:absolute;left:332.40px;top:206.76px" class="cls_003"><span class="cls_003">>=</span></div>
+<div style="position:absolute;left:360.96px;top:203.16px" class="cls_003"><span class="cls_003">20))</span></div>
+<div style="position:absolute;left:161.04px;top:222.12px" class="cls_003"><span class="cls_003">System.out.println("Case</span></div>
+<div style="position:absolute;left:399.12px;top:222.12px" class="cls_003"><span class="cls_003">2");</span></div>
+<div style="position:absolute;left:142.56px;top:243.48px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:132.96px;top:262.20px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:132.00px;top:352.32px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:213.36px;top:352.32px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:132.48px;top:409.32px" class="cls_003"><span class="cls_003">Case</span></div>
+<div style="position:absolute;left:180.72px;top:409.32px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:132.48px;top:428.04px" class="cls_003"><span class="cls_003">Case</span></div>
+<div style="position:absolute;left:179.76px;top:428.04px" class="cls_003"><span class="cls_003">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:221.28px;top:16.48px" class="cls_007"><span class="cls_007">Java Switch Case</span></div>
+<div style="position:absolute;left:131.04px;top:84.12px" class="cls_003"><span class="cls_003">class  SwitchStatementExample</span></div>
+<div style="position:absolute;left:409.68px;top:84.12px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.16px;top:122.04px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.48px;top:159.96px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.36px;top:159.96px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.04px;top:159.96px" class="cls_003"><span class="cls_003">2;</span></div>
+<div style="position:absolute;left:150.48px;top:198.12px" class="cls_003"><span class="cls_003">switch</span></div>
+<div style="position:absolute;left:218.16px;top:198.12px" class="cls_003"><span class="cls_003">(x)</span></div>
+<div style="position:absolute;left:256.32px;top:198.12px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:159.60px;top:217.08px" class="cls_003"><span class="cls_003">case</span></div>
+<div style="position:absolute;left:208.56px;top:217.08px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:219.84px;top:217.08px" class="cls_003"><span class="cls_003">:</span></div>
+<div style="position:absolute;left:168.96px;top:236.04px" class="cls_003"><span class="cls_003">System.out.println("x  is</span></div>
+<div style="position:absolute;left:409.68px;top:236.04px" class="cls_003"><span class="cls_003">1");</span></div>
+<div style="position:absolute;left:168.96px;top:255.00px" class="cls_003"><span class="cls_003">break;</span></div>
+<div style="position:absolute;left:159.60px;top:273.96px" class="cls_003"><span class="cls_003">case</span></div>
+<div style="position:absolute;left:207.36px;top:273.96px" class="cls_003"><span class="cls_003">2:</span></div>
+<div style="position:absolute;left:168.96px;top:292.92px" class="cls_003"><span class="cls_003">System.out.println("x  is</span></div>
+<div style="position:absolute;left:409.20px;top:292.92px" class="cls_003"><span class="cls_003">2");</span></div>
+<div style="position:absolute;left:169.44px;top:311.88px" class="cls_003"><span class="cls_003">break;</span></div>
+<div style="position:absolute;left:159.60px;top:330.84px" class="cls_003"><span class="cls_003">default:</span></div>
+<div style="position:absolute;left:168.96px;top:350.04px" class="cls_003"><span class="cls_003">System.out.printlnrx  is  neither</span></div>
+<div style="position:absolute;left:486.72px;top:350.04px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:168.96px;top:369.00px" class="cls_003"><span class="cls_003">break;</span></div>
+<div style="position:absolute;left:150.48px;top:387.72px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:130.32px;top:519.84px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.64px;top:519.84px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:130.32px;top:577.32px" class="cls_003"><span class="cls_003">x  is</span></div>
+<div style="position:absolute;left:178.80px;top:577.32px" class="cls_003"><span class="cls_003">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:187.68px;top:20.08px" class="cls_007"><span class="cls_007">Java Enhanced For Loop</span></div>
+<div style="position:absolute;left:130.80px;top:87.48px" class="cls_003"><span class="cls_003">class  EnhancedForLoop</span></div>
+<div style="position:absolute;left:341.28px;top:87.48px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.40px;top:124.92px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.48px;top:144.36px" class="cls_003"><span class="cls_003">int  arr[]</span></div>
+<div style="position:absolute;left:245.52px;top:143.88px" class="cls_003"><span class="cls_003">=  new int[6];</span></div>
+<div style="position:absolute;left:150.48px;top:163.56px" class="cls_003"><span class="cls_003">int  i;</span></div>
+<div style="position:absolute;left:150.00px;top:182.52px" class="cls_003"><span class="cls_003">for</span></div>
+<div style="position:absolute;left:189.60px;top:182.28px" class="cls_003"><span class="cls_003">(i</span></div>
+<div style="position:absolute;left:216.96px;top:182.28px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:236.40px;top:182.28px" class="cls_003"><span class="cls_003">0;  i</span></div>
+<div style="position:absolute;left:284.16px;top:181.56px" class="cls_003"><span class="cls_003">&lt; arr.length;  i++)</span></div>
+<div style="position:absolute;left:159.84px;top:201.00px" class="cls_003"><span class="cls_003">arr[i]</span></div>
+<div style="position:absolute;left:226.56px;top:201.00px" class="cls_003"><span class="cls_003">= i;</span></div>
+<div style="position:absolute;left:150.24px;top:239.16px" class="cls_003"><span class="cls_003">for</span></div>
+<div style="position:absolute;left:189.60px;top:238.68px" class="cls_003"><span class="cls_003">(int  j:  arr)</span></div>
+<div style="position:absolute;left:159.60px;top:257.40px" class="cls_003"><span class="cls_003">System.out.println(j);</span></div>
+<div style="position:absolute;left:141.36px;top:278.48px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.52px;top:312.80px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.28px;top:406.24px" class="cls_007"><span class="cls_007">Output</span></div>
+<div style="position:absolute;left:213.12px;top:406.00px" class="cls_007"><span class="cls_007">:</span></div>
+<div style="position:absolute;left:131.52px;top:465.24px" class="cls_003"><span class="cls_003">0</span></div>
+<div style="position:absolute;left:132.72px;top:484.20px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:132.00px;top:503.16px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:131.76px;top:522.12px" class="cls_003"><span class="cls_003">3</span></div>
+<div style="position:absolute;left:131.28px;top:540.84px" class="cls_003"><span class="cls_003">4</span></div>
+<div style="position:absolute;left:132.24px;top:559.80px" class="cls_003"><span class="cls_003">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:168.96px;top:3.52px" class="cls_007"><span class="cls_007">Java Passing Parameters To</span></div>
+<div style="position:absolute;left:270.96px;top:28.72px" class="cls_007"><span class="cls_007">Method</span></div>
+<div style="position:absolute;left:131.28px;top:83.64px" class="cls_003"><span class="cls_003">class  PassingParametersToMethod</span></div>
+<div style="position:absolute;left:438.96px;top:83.64px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.64px;top:121.56px" class="cls_003"><span class="cls_003">public  static void main(String argsr</span></div>
+<div style="position:absolute;left:149.76px;top:140.76px" class="cls_003"><span class="cls_003">TestObject  obj</span></div>
+<div style="position:absolute;left:294.24px;top:140.76px" class="cls_003"><span class="cls_003">=  new TestObject();</span></div>
+<div style="position:absolute;left:149.76px;top:159.72px" class="cls_003"><span class="cls_003">obj.printMessage("Hello World</span></div>
+<div style="position:absolute;left:441.12px;top:159.72px" class="cls_003"><span class="cls_003">!!");</span></div>
+<div style="position:absolute;left:141.12px;top:178.68px" class="cls_003"><span class="cls_003">)-</span></div>
+<div style="position:absolute;left:131.28px;top:215.88px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.80px;top:254.76px" class="cls_003"><span class="cls_003">class  TestObject</span></div>
+<div style="position:absolute;left:294.72px;top:254.76px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.64px;top:292.68px" class="cls_003"><span class="cls_003">String message;</span></div>
+<div style="position:absolute;left:140.16px;top:330.84px" class="cls_003"><span class="cls_003">void printMessage(String text)</span></div>
+<div style="position:absolute;left:438.96px;top:330.84px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:149.76px;top:349.80px" class="cls_003"><span class="cls_003">message</span></div>
+<div style="position:absolute;left:226.80px;top:349.80px" class="cls_003"><span class="cls_003">= text;</span></div>
+<div style="position:absolute;left:150.24px;top:368.76px" class="cls_003"><span class="cls_003">System.out.println(message);</span></div>
+<div style="position:absolute;left:141.12px;top:387.00px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:131.28px;top:424.92px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.32px;top:519.84px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:213.12px;top:519.84px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:130.80px;top:577.32px" class="cls_003"><span class="cls_003">Hello World</span></div>
+<div style="position:absolute;left:248.88px;top:577.32px" class="cls_003"><span class="cls_003">!!</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:223.20px;top:10.00px" class="cls_007"><span class="cls_007">Java Constructor</span></div>
+<div style="position:absolute;left:129.36px;top:78.12px" class="cls_003"><span class="cls_003">class  Constructor</span></div>
+<div style="position:absolute;left:304.56px;top:77.40px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:138.72px;top:116.52px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:148.08px;top:135.72px" class="cls_003"><span class="cls_003">TestClass obj</span></div>
+<div style="position:absolute;left:284.16px;top:135.72px" class="cls_003"><span class="cls_003">=  new TestClass();</span></div>
+<div style="position:absolute;left:139.20px;top:153.96px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:129.36px;top:194.72px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:129.36px;top:231.48px" class="cls_003"><span class="cls_003">class  TestClass</span></div>
+<div style="position:absolute;left:284.88px;top:230.52px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:138.24px;top:269.64px" class="cls_003"><span class="cls_003">TestClass()</span></div>
+<div style="position:absolute;left:255.84px;top:269.64px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:148.56px;top:288.84px" class="cls_003"><span class="cls_003">System.out.println("Constructor  call</span></div>
+<div style="position:absolute;left:139.20px;top:307.32px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:128.88px;top:421.44px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:211.68px;top:421.44px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:128.88px;top:479.40px" class="cls_003"><span class="cls_003">Constructor  called</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:213.36px;top:14.04px" class="cls_002"><span class="cls_002">Java Nested If Else</span></div>
+<div style="position:absolute;left:131.04px;top:82.68px" class="cls_003"><span class="cls_003">class  NestedIfElseExample</span></div>
+<div style="position:absolute;left:381.60px;top:81.96px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.40px;top:120.84px" class="cls_003"><span class="cls_003">public  static void main(String argsr</span></div>
+<div style="position:absolute;left:150.72px;top:158.76px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.84px;top:158.76px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.28px;top:158.76px" class="cls_003"><span class="cls_003">5;</span></div>
+<div style="position:absolute;left:150.72px;top:177.72px" class="cls_003"><span class="cls_003">if</span></div>
+<div style="position:absolute;left:180.00px;top:177.72px" class="cls_003"><span class="cls_003">(x</span></div>
+<div style="position:absolute;left:207.84px;top:177.72px" class="cls_003"><span class="cls_003">==</span></div>
+<div style="position:absolute;left:237.12px;top:177.72px" class="cls_003"><span class="cls_003">5)  f</span></div>
+<div style="position:absolute;left:159.84px;top:196.92px" class="cls_003"><span class="cls_003">if</span></div>
+<div style="position:absolute;left:189.84px;top:196.92px" class="cls_003"><span class="cls_003">(x</span></div>
+<div style="position:absolute;left:217.44px;top:196.92px" class="cls_003"><span class="cls_003">></span></div>
+<div style="position:absolute;left:237.60px;top:196.92px" class="cls_003"><span class="cls_003">1)</span></div>
+<div style="position:absolute;left:265.92px;top:196.92px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:169.20px;top:215.88px" class="cls_003"><span class="cls_003">System.out.println("x  is</span></div>
+<div style="position:absolute;left:409.92px;top:215.88px" class="cls_003"><span class="cls_003">5 and  is</span></div>
+<div style="position:absolute;left:160.56px;top:237.48px" class="cls_003"><span class="cls_003">}-</span></div>
+<div style="position:absolute;left:150.72px;top:253.08px" class="cls_003"><span class="cls_003">} else</span></div>
+<div style="position:absolute;left:159.36px;top:273.00px" class="cls_003"><span class="cls_003">System.out.println("x  is  not</span></div>
+<div style="position:absolute;left:439.20px;top:273.00px" class="cls_003"><span class="cls_003">5");</span></div>
+<div style="position:absolute;left:140.88px;top:291.24px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:131.04px;top:329.16px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.56px;top:423.84px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.88px;top:423.84px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:130.56px;top:481.32px" class="cls_003"><span class="cls_003">x  is</span></div>
+<div style="position:absolute;left:179.04px;top:481.32px" class="cls_003"><span class="cls_003">5  and  is  greater  than</span></div>
+<div style="position:absolute;left:391.44px;top:481.32px" class="cls_003"><span class="cls_003">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:179.76px;top:16.72px" class="cls_007"><span class="cls_007">Java Conditional Operator</span></div>
+<div style="position:absolute;left:130.32px;top:84.60px" class="cls_003"><span class="cls_003">class  ConditionalOperator</span></div>
+<div style="position:absolute;left:379.92px;top:84.60px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:139.68px;top:121.80px" class="cls_003"><span class="cls_003">public  static void main(String args[j</span></div>
+<div style="position:absolute;left:150.00px;top:142.44px" class="cls_003"><span class="cls_003">int  age</span></div>
+<div style="position:absolute;left:226.32px;top:142.44px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:245.28px;top:142.20px" class="cls_003"><span class="cls_003">25</span></div>
+<div style="position:absolute;left:150.00px;top:161.40px" class="cls_003"><span class="cls_003">int  x</span></div>
+<div style="position:absolute;left:207.12px;top:161.40px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:227.52px;top:161.16px" class="cls_003"><span class="cls_003">(age</span></div>
+<div style="position:absolute;left:274.32px;top:160.92px" class="cls_003"><span class="cls_003">==</span></div>
+<div style="position:absolute;left:303.36px;top:160.92px" class="cls_003"><span class="cls_003">25</span></div>
+<div style="position:absolute;left:331.92px;top:160.68px" class="cls_003"><span class="cls_003">?</span></div>
+<div style="position:absolute;left:351.36px;top:160.68px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:372.48px;top:160.68px" class="cls_003"><span class="cls_003">:</span></div>
+<div style="position:absolute;left:389.28px;top:160.44px" class="cls_003"><span class="cls_003">0);</span></div>
+<div style="position:absolute;left:149.52px;top:179.64px" class="cls_003"><span class="cls_003">System.out,println(x);</span></div>
+<div style="position:absolute;left:140.40px;top:197.84px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.04px;top:235.76px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.04px;top:331.96px" class="cls_012"><span class="cls_012">Output</span></div>
+<div style="position:absolute;left:212.88px;top:331.96px" class="cls_012"><span class="cls_012">:</span></div>
+<div style="position:absolute;left:132.24px;top:388.68px" class="cls_003"><span class="cls_003">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9624px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:226.56px;top:12.36px" class="cls_002"><span class="cls_002">Java Math Class</span></div>
+<div style="position:absolute;left:130.80px;top:81.24px" class="cls_003"><span class="cls_003">class  MathClassExample</span></div>
+<div style="position:absolute;left:140.16px;top:119.40px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:149.76px;top:138.36px" class="cls_003"><span class="cls_003">System.out.println(Math.abs(-25.6));</span></div>
+<div style="position:absolute;left:149.76px;top:157.56px" class="cls_003"><span class="cls_003">System.out.println(Math.ceil(25.6));</span></div>
+<div style="position:absolute;left:149.76px;top:176.52px" class="cls_003"><span class="cls_003">System.out.println(Math.floor(25.6);</span></div>
+<div style="position:absolute;left:149.76px;top:195.72px" class="cls_003"><span class="cls_003">System.out.println(Math.max(2,</span></div>
+<div style="position:absolute;left:448.32px;top:195.72px" class="cls_003"><span class="cls_003">4));</span></div>
+<div style="position:absolute;left:149.76px;top:214.68px" class="cls_003"><span class="cls_003">System.out.println(Math.min(2,</span></div>
+<div style="position:absolute;left:448.32px;top:214.68px" class="cls_003"><span class="cls_003">4));</span></div>
+<div style="position:absolute;left:149.28px;top:233.88px" class="cls_003"><span class="cls_003">System.out.println(Math.pow(2,</span></div>
+<div style="position:absolute;left:448.32px;top:233.88px" class="cls_003"><span class="cls_003">4));</span></div>
+<div style="position:absolute;left:149.76px;top:252.84px" class="cls_003"><span class="cls_003">System.out.println(Math.sqrt(9));</span></div>
+<div style="position:absolute;left:140.64px;top:271.08px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.80px;top:309.24px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.32px;top:404.64px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.64px;top:404.64px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:130.32px;top:462.12px" class="cls_003"><span class="cls_003">25.6</span></div>
+<div style="position:absolute;left:130.32px;top:481.32px" class="cls_003"><span class="cls_003">26.0</span></div>
+<div style="position:absolute;left:130.32px;top:500.28px" class="cls_003"><span class="cls_003">25.0</span></div>
+<div style="position:absolute;left:129.84px;top:519.48px" class="cls_003"><span class="cls_003">4</span></div>
+<div style="position:absolute;left:130.32px;top:538.44px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:131.28px;top:557.64px" class="cls_003"><span class="cls_003">16.0</span></div>
+<div style="position:absolute;left:130.32px;top:576.60px" class="cls_003"><span class="cls_003">3.0</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:10426px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:151.44px;top:9.64px" class="cls_013"><span class="cls_013">3:23 </span><span class="cls_014">  f:</span></div>
+<div style="position:absolute;left:329.76px;top:11.80px" class="cls_013"><span class="cls_013">0 c'en</span></div>
+<div style="position:absolute;left:408.96px;top:11.80px" class="cls_013"><span class="cls_013">ill</span></div>
+<div style="position:absolute;left:425.76px;top:11.32px" class="cls_013"><span class="cls_013">56%1=</span></div>
+<div style="position:absolute;left:198.00px;top:43.36px" class="cls_007"><span class="cls_007">Java Array Introduction</span></div>
+<div style="position:absolute;left:137.28px;top:127.36px" class="cls_015"><span class="cls_015">class  Arraylntroduction{</span></div>
+<div style="position:absolute;left:174.24px;top:163.80px" class="cls_015"><span class="cls_015">public  static  void  main(String </span><span class="cls_003">ark</span></div>
+<div style="position:absolute;left:174.72px;top:181.32px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:211.44px;top:201.28px" class="cls_015"><span class="cls_015">int  arr[]=0,10,20,30,40,50,6C</span></div>
+<div style="position:absolute;left:210.96px;top:219.76px" class="cls_015"><span class="cls_015">System.out.println(arr[2]);</span></div>
+<div style="position:absolute;left:137.76px;top:275.12px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:136.80px;top:361.60px" class="cls_007"><span class="cls_007">Output</span></div>
+<div style="position:absolute;left:216.00px;top:361.60px" class="cls_007"><span class="cls_007">:</span></div>
+<div style="position:absolute;left:137.76px;top:420.16px" class="cls_015"><span class="cls_015">10</span></div>
+<div style="position:absolute;left:137.76px;top:438.40px" class="cls_015"><span class="cls_015">11</span></div>
+<div style="position:absolute;left:137.76px;top:456.88px" class="cls_015"><span class="cls_015">12</span></div>
+<div style="position:absolute;left:137.76px;top:475.12px" class="cls_015"><span class="cls_015">13</span></div>
+<div style="position:absolute;left:137.76px;top:493.36px" class="cls_015"><span class="cls_015">14</span></div>
+<div style="position:absolute;left:137.76px;top:511.84px" class="cls_015"><span class="cls_015">15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:11228px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:150.96px;top:7.04px" class="cls_016"><span class="cls_016">Java Array as method argument</span></div>
+<div style="position:absolute;left:129.60px;top:96.12px" class="cls_003"><span class="cls_003">class ArrayAsMethodArgument</span></div>
+<div style="position:absolute;left:401.52px;top:96.12px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:138.96px;top:134.52px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:149.28px;top:172.92px" class="cls_003"><span class="cls_003">int  arr[]</span></div>
+<div style="position:absolute;left:245.76px;top:172.92px" class="cls_003"><span class="cls_003">=  new int[6];</span></div>
+<div style="position:absolute;left:149.28px;top:191.88px" class="cls_003"><span class="cls_003">int  i;</span></div>
+<div style="position:absolute;left:148.80px;top:211.08px" class="cls_003"><span class="cls_003">for</span></div>
+<div style="position:absolute;left:188.88px;top:211.08px" class="cls_003"><span class="cls_003">(i</span></div>
+<div style="position:absolute;left:216.72px;top:211.08px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:235.92px;top:211.08px" class="cls_003"><span class="cls_003">0;  i</span></div>
+<div style="position:absolute;left:284.64px;top:211.08px" class="cls_003"><span class="cls_003">&lt; arr.length;  i++)</span></div>
+<div style="position:absolute;left:469.92px;top:211.08px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:158.64px;top:230.28px" class="cls_003"><span class="cls_003">arr[i]</span></div>
+<div style="position:absolute;left:226.56px;top:230.28px" class="cls_003"><span class="cls_003">=  i;</span></div>
+<div style="position:absolute;left:148.80px;top:287.88px" class="cls_003"><span class="cls_003">change(arr);</span></div>
+<div style="position:absolute;left:139.44px;top:324.56px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:139.44px;top:364.68px" class="cls_003"><span class="cls_003">static void  change(int  arr[])</span></div>
+<div style="position:absolute;left:431.04px;top:364.68px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:148.80px;top:383.88px" class="cls_003"><span class="cls_003">for</span></div>
+<div style="position:absolute;left:188.88px;top:383.88px" class="cls_003"><span class="cls_003">(int  j:  arr)</span></div>
+<div style="position:absolute;left:158.16px;top:403.08px" class="cls_003"><span class="cls_003">System.out.println((j</span></div>
+<div style="position:absolute;left:371.76px;top:403.08px" class="cls_003"><span class="cls_003">+</span></div>
+<div style="position:absolute;left:392.16px;top:403.08px" class="cls_003"><span class="cls_003">10));</span></div>
+<div style="position:absolute;left:139.44px;top:419.56px" class="cls_017"><span class="cls_017">}</span></div>
+<div style="position:absolute;left:129.60px;top:457.96px" class="cls_017"><span class="cls_017">}</span></div>
+<div style="position:absolute;left:129.12px;top:555.84px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:130.08px;top:613.80px" class="cls_003"><span class="cls_003">10</span></div>
+<div style="position:absolute;left:130.08px;top:633.00px" class="cls_003"><span class="cls_003">11</span></div>
+<div style="position:absolute;left:130.08px;top:652.20px" class="cls_003"><span class="cls_003">12</span></div>
+<div style="position:absolute;left:130.08px;top:671.40px" class="cls_003"><span class="cls_003">13</span></div>
+<div style="position:absolute;left:130.08px;top:690.60px" class="cls_003"><span class="cls_003">14</span></div>
+<div style="position:absolute;left:130.08px;top:709.80px" class="cls_003"><span class="cls_003">15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12030px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:218.40px;top:1.80px" class="cls_018"><span class="cls_018">Java Static Variables And</span></div>
+<div style="position:absolute;left:276.96px;top:20.04px" class="cls_018"><span class="cls_018">Methods</span></div>
+<div style="position:absolute;left:180.96px;top:59.56px" class="cls_013"><span class="cls_013">class  StaticClassExample</span></div>
+<div style="position:absolute;left:353.04px;top:59.56px" class="cls_013"><span class="cls_013">{</span></div>
+<div style="position:absolute;left:187.44px;top:86.92px" class="cls_013"><span class="cls_013">private String first;</span></div>
+<div style="position:absolute;left:187.44px;top:100.36px" class="cls_013"><span class="cls_013">private String last;</span></div>
+<div style="position:absolute;left:187.44px;top:114.04px" class="cls_013"><span class="cls_013">private  static  int members</span></div>
+<div style="position:absolute;left:373.44px;top:114.04px" class="cls_013"><span class="cls_013">=</span></div>
+<div style="position:absolute;left:386.88px;top:114.04px" class="cls_013"><span class="cls_013">0;</span></div>
+<div style="position:absolute;left:187.44px;top:141.16px" class="cls_013"><span class="cls_013">public StaticClassExample(String fn,</span></div>
+<div style="position:absolute;left:194.16px;top:154.84px" class="cls_013"><span class="cls_013">first</span></div>
+<div style="position:absolute;left:235.44px;top:154.84px" class="cls_013"><span class="cls_013">= fn;</span></div>
+<div style="position:absolute;left:194.40px;top:168.52px" class="cls_013"><span class="cls_013">last</span></div>
+<div style="position:absolute;left:228.72px;top:168.52px" class="cls_013"><span class="cls_013">=  ln;</span></div>
+<div style="position:absolute;left:193.68px;top:182.20px" class="cls_013"><span class="cls_013">members++;</span></div>
+<div style="position:absolute;left:194.16px;top:195.64px" class="cls_013"><span class="cls_013">System.out.println("Members  in the c</span></div>
+<div style="position:absolute;left:187.92px;top:208.84px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:187.44px;top:236.44px" class="cls_013"><span class="cls_013">public String getfirst()</span></div>
+<div style="position:absolute;left:360.00px;top:236.44px" class="cls_013"><span class="cls_013">{</span></div>
+<div style="position:absolute;left:194.88px;top:250.12px" class="cls_013"><span class="cls_013">return first;</span></div>
+<div style="position:absolute;left:187.92px;top:263.08px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:187.44px;top:290.92px" class="cls_013"><span class="cls_013">public String getlast()</span></div>
+<div style="position:absolute;left:353.04px;top:290.92px" class="cls_013"><span class="cls_013">{</span></div>
+<div style="position:absolute;left:194.88px;top:304.60px" class="cls_013"><span class="cls_013">return  last;</span></div>
+<div style="position:absolute;left:187.92px;top:317.56px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:187.44px;top:345.40px" class="cls_013"><span class="cls_013">public  static  int getmembers()</span></div>
+<div style="position:absolute;left:401.28px;top:345.40px" class="cls_013"><span class="cls_013">{</span></div>
+<div style="position:absolute;left:194.88px;top:359.08px" class="cls_013"><span class="cls_013">return mi-mhPrs;</span></div>
+<div style="position:absolute;left:187.92px;top:376.04px" class="cls_019"><span class="cls_019">}</span></div>
+<div style="position:absolute;left:180.96px;top:385.72px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:180.96px;top:413.32px" class="cls_013"><span class="cls_013">class MainClass</span></div>
+<div style="position:absolute;left:290.88px;top:413.32px" class="cls_013"><span class="cls_013">{</span></div>
+<div style="position:absolute;left:187.44px;top:440.68px" class="cls_013"><span class="cls_013">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:194.16px;top:467.80px" class="cls_013"><span class="cls_013">StaticClassExample obj1</span></div>
+<div style="position:absolute;left:359.28px;top:467.80px" class="cls_013"><span class="cls_013">=  new Static</span></div>
+<div style="position:absolute;left:194.16px;top:481.48px" class="cls_013"><span class="cls_013">StaticClassExample obj2</span></div>
+<div style="position:absolute;left:359.28px;top:481.48px" class="cls_013"><span class="cls_013">=  new Static</span></div>
+<div style="position:absolute;left:194.16px;top:495.16px" class="cls_013"><span class="cls_013">StaticClassExample obj3</span></div>
+<div style="position:absolute;left:359.28px;top:495.16px" class="cls_013"><span class="cls_013">=  new Static</span></div>
+<div style="position:absolute;left:194.16px;top:522.28px" class="cls_013"><span class="cls_013">System.out.println(obj2.getfirst());</span></div>
+<div style="position:absolute;left:194.16px;top:535.96px" class="cls_013"><span class="cls_013">System.out.println(StaticClassExampl</span></div>
+<div style="position:absolute;left:187.92px;top:548.92px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:180.96px;top:562.60px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:180.48px;top:630.20px" class="cls_020"><span class="cls_020">Output</span></div>
+<div style="position:absolute;left:239.04px;top:630.20px" class="cls_020"><span class="cls_020">:</span></div>
+<div style="position:absolute;left:180.24px;top:671.32px" class="cls_013"><span class="cls_013">Members  in the  club</span></div>
+<div style="position:absolute;left:319.92px;top:671.32px" class="cls_013"><span class="cls_013">:1</span></div>
+<div style="position:absolute;left:180.24px;top:684.76px" class="cls_013"><span class="cls_013">Members  in the  club</span></div>
+<div style="position:absolute;left:319.92px;top:684.76px" class="cls_013"><span class="cls_013">:2</span></div>
+<div style="position:absolute;left:180.24px;top:698.44px" class="cls_013"><span class="cls_013">Members  in the  club</span></div>
+<div style="position:absolute;left:319.92px;top:698.44px" class="cls_013"><span class="cls_013">:3</span></div>
+<div style="position:absolute;left:180.24px;top:712.12px" class="cls_013"><span class="cls_013">Cde</span></div>
+<div style="position:absolute;left:180.24px;top:725.80px" class="cls_013"><span class="cls_013">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12832px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:226.80px;top:18.88px" class="cls_007"><span class="cls_007">Java Inheritance</span></div>
+<div style="position:absolute;left:131.52px;top:86.28px" class="cls_003"><span class="cls_003">class  InheritanceExample</span></div>
+<div style="position:absolute;left:371.04px;top:86.28px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.64px;top:124.20px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.48px;top:162.12px" class="cls_003"><span class="cls_003">class2 obj</span></div>
+<div style="position:absolute;left:255.84px;top:162.12px" class="cls_003"><span class="cls_003">= new class2();</span></div>
+<div style="position:absolute;left:150.48px;top:180.84px" class="cls_003"><span class="cls_003">System.out.println(obj.age);</span></div>
+<div style="position:absolute;left:150.48px;top:199.80px" class="cls_003"><span class="cls_003">System.out.println(obj.speed);</span></div>
+<div style="position:absolute;left:150.96px;top:237.72px" class="cls_003"><span class="cls_003">If  Following  statement  is  not  possi:</span></div>
+<div style="position:absolute;left:150.96px;top:256.68px" class="cls_003"><span class="cls_003">If  System.out.println(obj.limit);</span></div>
+<div style="position:absolute;left:141.36px;top:292.64px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.52px;top:330.56px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:132.00px;top:370.20px" class="cls_003"><span class="cls_003">I/superclass</span></div>
+<div style="position:absolute;left:131.52px;top:389.16px" class="cls_003"><span class="cls_003">class  classl</span></div>
+<div style="position:absolute;left:256.32px;top:389.16px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:141.36px;top:408.12px" class="cls_003"><span class="cls_003">int  age</span></div>
+<div style="position:absolute;left:217.44px;top:408.12px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:236.40px;top:408.12px" class="cls_003"><span class="cls_003">33;</span></div>
+<div style="position:absolute;left:140.64px;top:427.08px" class="cls_003"><span class="cls_003">protected  int  speed</span></div>
+<div style="position:absolute;left:332.16px;top:427.08px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:351.12px;top:427.08px" class="cls_003"><span class="cls_003">44;</span></div>
+<div style="position:absolute;left:140.64px;top:446.04px" class="cls_003"><span class="cls_003">private  int  limit</span></div>
+<div style="position:absolute;left:313.20px;top:446.04px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:332.64px;top:446.04px" class="cls_003"><span class="cls_003">55;</span></div>
+<div style="position:absolute;left:131.52px;top:463.04px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:131.52px;top:502.68px" class="cls_003"><span class="cls_003">//subclass</span></div>
+<div style="position:absolute;left:131.52px;top:521.64px" class="cls_003"><span class="cls_003">class  class2 extends  classl</span></div>
+<div style="position:absolute;left:400.08px;top:520.92px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:141.36px;top:540.60px" class="cls_003"><span class="cls_003">int  cats</span></div>
+<div style="position:absolute;left:227.28px;top:540.60px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:246.24px;top:540.60px" class="cls_003"><span class="cls_003">8;</span></div>
+<div style="position:absolute;left:132.00px;top:565.96px" class="cls_013"><span class="cls_013">}</span></div>
+<div style="position:absolute;left:131.04px;top:652.80px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.88px;top:652.80px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:131.04px;top:710.04px" class="cls_003"><span class="cls_003">33</span></div>
+<div style="position:absolute;left:130.56px;top:728.76px" class="cls_003"><span class="cls_003">44</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:13634px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:187.20px;top:14.04px" class="cls_002"><span class="cls_002">Java Exception Handling</span></div>
+<div style="position:absolute;left:131.04px;top:82.68px" class="cls_003"><span class="cls_003">import  java.util.*;</span></div>
+<div style="position:absolute;left:131.04px;top:120.84px" class="cls_003"><span class="cls_003">class  ExceptionHandling</span></div>
+<div style="position:absolute;left:362.64px;top:119.88px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.40px;top:158.76px" class="cls_003"><span class="cls_003">public  static void main(String argsr</span></div>
+<div style="position:absolute;left:150.24px;top:196.92px" class="cls_003"><span class="cls_003">try</span></div>
+<div style="position:absolute;left:189.36px;top:195.96px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:159.84px;top:234.84px" class="cls_003"><span class="cls_003">int  a</span></div>
+<div style="position:absolute;left:217.44px;top:234.84px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:237.60px;top:234.84px" class="cls_003"><span class="cls_003">1;</span></div>
+<div style="position:absolute;left:159.84px;top:254.04px" class="cls_003"><span class="cls_003">int  b</span></div>
+<div style="position:absolute;left:217.44px;top:254.04px" class="cls_003"><span class="cls_003">=</span></div>
+<div style="position:absolute;left:236.64px;top:254.04px" class="cls_003"><span class="cls_003">0;</span></div>
+<div style="position:absolute;left:159.84px;top:273.00px" class="cls_003"><span class="cls_003">int  c</span></div>
+<div style="position:absolute;left:217.44px;top:273.00px" class="cls_003"><span class="cls_003">= a  I  b;</span></div>
+<div style="position:absolute;left:159.36px;top:291.96px" class="cls_003"><span class="cls_003">System.out.println(c);</span></div>
+<div style="position:absolute;left:150.72px;top:329.16px" class="cls_003"><span class="cls_003">} catch</span></div>
+<div style="position:absolute;left:228.24px;top:329.16px" class="cls_003"><span class="cls_003">(Exception e)</span></div>
+<div style="position:absolute;left:362.64px;top:329.16px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:159.36px;top:349.08px" class="cls_003"><span class="cls_003">System.out.println("Exception  Caue</span></div>
+<div style="position:absolute;left:150.72px;top:370.68px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:140.88px;top:405.48px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:131.04px;top:424.44px" class="cls_003"><span class="cls_003">}</span></div>
+<div style="position:absolute;left:130.56px;top:519.36px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.88px;top:519.36px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:131.04px;top:576.84px" class="cls_003"><span class="cls_003">Exception Caught</span></div>
+<div style="position:absolute;left:297.36px;top:576.84px" class="cls_003"><span class="cls_003">: I  by zero</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:14436px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:244.32px;top:15.96px" class="cls_002"><span class="cls_002">Java JFrame</span></div>
+<div style="position:absolute;left:131.04px;top:84.12px" class="cls_003"><span class="cls_003">import  javax.swing.*;</span></div>
+<div style="position:absolute;left:131.04px;top:103.08px" class="cls_003"><span class="cls_003">import  java.awt.*;</span></div>
+<div style="position:absolute;left:131.04px;top:122.04px" class="cls_003"><span class="cls_003">import  java.awt.event.*;</span></div>
+<div style="position:absolute;left:131.04px;top:159.96px" class="cls_003"><span class="cls_003">class  JFrameExample</span></div>
+<div style="position:absolute;left:323.52px;top:159.24px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.16px;top:198.12px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.00px;top:217.08px" class="cls_003"><span class="cls_003">hello obj</span></div>
+<div style="position:absolute;left:246.00px;top:217.08px" class="cls_003"><span class="cls_003">=  new hello();</span></div>
+<div style="position:absolute;left:149.52px;top:236.04px" class="cls_003"><span class="cls_003">obj.setDefaultCloseOperation(JFrame.</span></div>
+<div style="position:absolute;left:140.64px;top:255.00px" class="cls_003"><span class="cls_003">}-</span></div>
+<div style="position:absolute;left:131.52px;top:295.56px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:131.04px;top:330.84px" class="cls_003"><span class="cls_003">class  hello extends JFrame</span></div>
+<div style="position:absolute;left:390.72px;top:330.12px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:140.16px;top:369.00px" class="cls_003"><span class="cls_003">JLabel  label</span></div>
+<div style="position:absolute;left:264.96px;top:369.00px" class="cls_003"><span class="cls_003">=  new JLabel("Hello Worl</span></div>
+<div style="position:absolute;left:140.16px;top:406.92px" class="cls_003"><span class="cls_003">hello()</span></div>
+<div style="position:absolute;left:217.68px;top:406.20px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:150.48px;top:425.88px" class="cls_003"><span class="cls_003">super("Your  Title Here");</span></div>
+<div style="position:absolute;left:150.00px;top:444.84px" class="cls_003"><span class="cls_003">this.add(label);</span></div>
+<div style="position:absolute;left:150.00px;top:463.08px" class="cls_003"><span class="cls_003">this. setVisible(true);</span></div>
+<div style="position:absolute;left:150.00px;top:482.76px" class="cls_003"><span class="cls_003">this.setSize(200,</span></div>
+<div style="position:absolute;left:323.04px;top:482.76px" class="cls_003"><span class="cls_003">200);</span></div>
+<div style="position:absolute;left:140.64px;top:497.12px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:140.64px;top:497.12px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:140.64px;top:503.36px" class="cls_005"><span class="cls_005">J</span></div>
+<div style="position:absolute;left:131.52px;top:542.52px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:130.32px;top:633.84px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.64px;top:633.84px" class="cls_011"><span class="cls_011">:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:15238px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:282.24px;top:8.04px" class="cls_021"><span class="cls_021">Java JList</span></div>
+<div style="position:absolute;left:220.32px;top:40.76px" class="cls_019"><span class="cls_019">import  javax.swing.*;</span></div>
+<div style="position:absolute;left:220.32px;top:49.88px" class="cls_019"><span class="cls_019">import  javax.swing.event.*;</span></div>
+<div style="position:absolute;left:220.32px;top:59.24px" class="cls_019"><span class="cls_019">import  java.awt.*;</span></div>
+<div style="position:absolute;left:220.32px;top:68.60px" class="cls_019"><span class="cls_019">import  java.awt.event.*;</span></div>
+<div style="position:absolute;left:220.32px;top:87.08px" class="cls_019"><span class="cls_019">class  JListExample</span></div>
+<div style="position:absolute;left:309.84px;top:87.08px" class="cls_019"><span class="cls_019">{</span></div>
+<div style="position:absolute;left:224.88px;top:96.44px" class="cls_019"><span class="cls_019">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:229.44px;top:105.56px" class="cls_019"><span class="cls_019">JListClass  obj</span></div>
+<div style="position:absolute;left:300.00px;top:105.56px" class="cls_019"><span class="cls_019">= new JListClass();</span></div>
+<div style="position:absolute;left:229.44px;top:114.92px" class="cls_019"><span class="cls_019">obj.setDefaultCloseOperation(JFrame.</span></div>
+<div style="position:absolute;left:225.12px;top:123.80px" class="cls_019"><span class="cls_019">}</span></div>
+<div style="position:absolute;left:220.32px;top:133.16px" class="cls_019"><span class="cls_019">}</span></div>
+<div style="position:absolute;left:220.08px;top:152.12px" class="cls_019"><span class="cls_019">class  JListClass  extends  JFrame</span></div>
+<div style="position:absolute;left:370.80px;top:152.12px" class="cls_019"><span class="cls_019">{</span></div>
+<div style="position:absolute;left:224.88px;top:170.60px" class="cls_019"><span class="cls_019">private JList  list;</span></div>
+<div style="position:absolute;left:224.88px;top:179.96px" class="cls_019"><span class="cls_019">private static  String  colornames[]</span></div>
+<div style="position:absolute;left:389.28px;top:179.96px" class="cls_019"><span class="cls_019">=</span></div>
+<div style="position:absolute;left:230.16px;top:189.08px" class="cls_019"><span class="cls_019">"black",</span></div>
+<div style="position:absolute;left:230.16px;top:198.44px" class="cls_019"><span class="cls_019">"blue",</span></div>
+<div style="position:absolute;left:230.16px;top:207.80px" class="cls_019"><span class="cls_019">"red",</span></div>
+<div style="position:absolute;left:230.16px;top:216.92px" class="cls_019"><span class="cls_019">"white"</span></div>
+<div style="position:absolute;left:225.12px;top:225.80px" class="cls_019"><span class="cls_019">};</span></div>
+<div style="position:absolute;left:224.88px;top:243.80px" class="cls_019"><span class="cls_019">private  static Color  colors[]</span></div>
+<div style="position:absolute;left:366.00px;top:244.76px" class="cls_019"><span class="cls_019">=</span></div>
+<div style="position:absolute;left:375.60px;top:244.52px" class="cls_019"><span class="cls_019">{</span></div>
+<div style="position:absolute;left:229.44px;top:254.12px" class="cls_019"><span class="cls_019">Color.black,</span></div>
+<div style="position:absolute;left:229.44px;top:263.48px" class="cls_019"><span class="cls_019">Color.blue,</span></div>
+<div style="position:absolute;left:229.44px;top:272.84px" class="cls_019"><span class="cls_019">Color.red,</span></div>
+<div style="position:absolute;left:229.44px;top:281.96px" class="cls_019"><span class="cls_019">Color.white</span></div>
+<div style="position:absolute;left:225.12px;top:290.84px" class="cls_019"><span class="cls_019">};</span></div>
+<div style="position:absolute;left:224.88px;top:309.80px" class="cls_019"><span class="cls_019">sel selsel</span></div>
+<div style="position:absolute;left:276.48px;top:309.80px" class="cls_019"><span class="cls_019">= new sel();</span></div>
+<div style="position:absolute;left:224.88px;top:328.52px" class="cls_019"><span class="cls_019">JListClass()</span></div>
+<div style="position:absolute;left:229.68px;top:337.64px" class="cls_019"><span class="cls_019">super("Your Title Here");</span></div>
+<div style="position:absolute;left:229.68px;top:347.00px" class="cls_019"><span class="cls_019">setLayout(new FlowLayout());</span></div>
+<div style="position:absolute;left:229.68px;top:356.36px" class="cls_019"><span class="cls_019">list</span></div>
+<div style="position:absolute;left:252.96px;top:356.36px" class="cls_019"><span class="cls_019">=  new JList(colornames);</span></div>
+<div style="position:absolute;left:229.68px;top:365.48px" class="cls_019"><span class="cls_019">list. set VisibleRowCount(4);</span></div>
+<div style="position:absolute;left:229.68px;top:374.84px" class="cls_019"><span class="cls_019">list.setSelectionMode(ListSelectionN</span></div>
+<div style="position:absolute;left:229.44px;top:384.20px" class="cls_019"><span class="cls_019">add(new JScrollPane(list));</span></div>
+<div style="position:absolute;left:229.44px;top:402.68px" class="cls_019"><span class="cls_019">this.setVisible(true);</span></div>
+<div style="position:absolute;left:229.44px;top:412.04px" class="cls_019"><span class="cls_019">this.setSize(300,</span></div>
+<div style="position:absolute;left:313.92px;top:412.04px" class="cls_019"><span class="cls_019">300);</span></div>
+<div style="position:absolute;left:229.68px;top:421.16px" class="cls_019"><span class="cls_019">list.addListSelectionListener(selsel</span></div>
+<div style="position:absolute;left:225.12px;top:438.40px" class="cls_022"><span class="cls_022">}</span></div>
+<div style="position:absolute;left:224.88px;top:458.36px" class="cls_019"><span class="cls_019">class  sel  implements  ListSelectionLi</span></div>
+<div style="position:absolute;left:229.68px;top:467.72px" class="cls_019"><span class="cls_019">public void valueChanged(ListSelecti</span></div>
+<div style="position:absolute;left:234.24px;top:476.84px" class="cls_019"><span class="cls_019">getContentPane().setBackground(colc</span></div>
+<div style="position:absolute;left:220.32px;top:521.92px" class="cls_022"><span class="cls_022">}</span></div>
+<div style="position:absolute;left:220.08px;top:568.68px" class="cls_021"><span class="cls_021">Output</span></div>
+<div style="position:absolute;left:260.64px;top:568.68px" class="cls_021"><span class="cls_021">:</span></div>
+<div style="position:absolute;left:262.56px;top:625.88px" class="cls_019"><span class="cls_019">Your Title Here</span></div>
+<div style="position:absolute;left:333.12px;top:619.64px" class="cls_023"><span class="cls_023">-</span></div>
+<div style="position:absolute;left:355.20px;top:619.88px" class="cls_023"><span class="cls_023">EN</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:16040px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:224.64px;top:18.36px" class="cls_002"><span class="cls_002">Java Hello World</span></div>
+<div style="position:absolute;left:131.52px;top:86.76px" class="cls_003"><span class="cls_003">class  HelloWorld</span></div>
+<div style="position:absolute;left:294.72px;top:86.76px" class="cls_003"><span class="cls_003">{</span></div>
+<div style="position:absolute;left:141.36px;top:124.68px" class="cls_003"><span class="cls_003">public  static void main(String args[]</span></div>
+<div style="position:absolute;left:150.48px;top:143.40px" class="cls_003"><span class="cls_003">System.out.println("Hello World");</span></div>
+<div style="position:absolute;left:141.84px;top:165.00px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:132.24px;top:202.92px" class="cls_003"><span class="cls_003">}-</span></div>
+<div style="position:absolute;left:131.04px;top:294.00px" class="cls_011"><span class="cls_011">Output</span></div>
+<div style="position:absolute;left:212.88px;top:294.00px" class="cls_011"><span class="cls_011">:</span></div>
+<div style="position:absolute;left:131.04px;top:351.24px" class="cls_003"><span class="cls_003">Hello World</span></div>
+</div>
+
+</body>
+</html>
